@@ -1,0 +1,101 @@
+document_id,provider_name,source_url,local_path,status
+DOC_A580C6EF,Tala,https://tala.co.ke/loc-terms-and-conditions/,dataset/raw/tala/terms_and_conditions.html,Success
+DOC_30907FD7,Tala,https://tala.co.ke/privacy-policy-ke/,dataset/raw/tala/privacy_policy.html,Success
+DOC_F9C57648,Branch,https://www.branch.co/ke/legal/terms-of-use,dataset/raw/branch/terms_of_use.html,Failed
+DOC_3F3094B6,Branch,https://www.branch.co/ke/legal/privacy-policies,dataset/raw/branch/privacy_policy.html,Success
+DOC_65C9D11D,Zenka,https://zenka.co.ke/zenka-finance-limited-terms-of-use/,dataset/raw/zenka/terms_of_use.html,Success
+DOC_2E5D3093,Zenka,https://zenka.co.ke/zenka-finance-limited-terms-and-conditions/,dataset/raw/zenka/terms_and_conditions.html,Success
+DOC_CF2B521B,Zenka,https://zenka.co.ke/zenka-finance-limited-privacy-policy/,dataset/raw/zenka/privacy_policy.html,Success
+DOC_F7FFD5ED,Lendplus,https://lendplus.ke/terms-and-conditions/,dataset/raw/lendplus/terms_and_conditions.html,Success
+DOC_59BE0FD9,Lendplus,https://lendplus.ke/privacy-policy/,dataset/raw/lendplus/privacy_policy.html,Success
+DOC_6E149E01,Berry,https://berry.ke/terms-conditions-new/,dataset/raw/berry/terms_and_conditions.html,Success
+DOC_6B32E129,Berry,https://berry.ke/privacy-policy/,dataset/raw/berry/privacy_policy.html,Success
+DOC_F71D0F8F,Mkopa,https://www.m-kopa.com/kenya/terms-of-service,dataset/raw/mkopa/terms_of_use.html,Success
+DOC_F0736F9A,Mkopa,https://www.m-kopa.com/our-privacy-notice-and-you,dataset/raw/mkopa/terms_of_use.html,Failed
+DOC_CA7C8CAB,Zanifu,https://www.zanifu.com/terms-and-conditions/,dataset/raw/zanifu/terms_and_conditions.html,Success
+DOC_66029394,Asante,https://asante.co.ke/terms,dataset/raw/asante/terms_and_conditions.html,Success
+DOC_147F9056,Asante,https://asante.co.ke/privacy,dataset/raw/asante/privacy_policy.html,Success
+DOC_91FDD470,Jumo,https://jumo.world/privacy-policy/,dataset/raw/jumo/privacy_policy.html,Success
+DOC_814B048C,Littlepesa,https://littlepesa.com/terms-conditions/,dataset/raw/littlepesa/terms_and_conditions.html,Success
+DOC_B3A9D5C5,Littlepesa,https://littlepesa.com/privacy-policy-2/,dataset/raw/littlepesa/privacy_policy.html,Success
+DOC_B68B446B,Pezesha,https://pezesha.com/privacy/,dataset/raw/pezesha/privacy_policy.html,Success
+DOC_612C8147,4G Capital,Offline,dataset/raw/4g_capital/terms_and_conditions.txt,Success
+DOC_59D4DFBE,Ngao Credit,Offline,dataset/raw/ngao_credit/terms_and_conditions.txt,Success
+DOC_D12CCC26,Longitude Finance,Offline,dataset/raw/longitude_finance/terms_and_conditions.txt,Success
+DOC_2CBCF595,Getcash Capital,Offline,dataset/raw/getcash_capital/terms_and_conditions.txt,Success
+DOC_F9DE25D3,Betapesa,https://betapesa.com/asset/Beta_Privacy%20policy_20260703.html,dataset/raw/betapesa/privacy_policy.html,Success
+DOC_D4A4F076,Helapesa,https://resource.helapesa.co.ke/data-privacy-policy/,dataset/raw/helapesa/privacy_policy.html,Success
+DOC_B1B69826,Spectrum Credit,https://www.spectrumcredit.co.ke/terms-conditions,dataset/raw/spectrum_credit/terms_and_conditions.html,Success
+DOC_83A147DA,Spectrum Credit,https://www.spectrumcredit.co.ke/privacy-policy,dataset/raw/spectrum_credit/privacy_policy.html,Success
+DOC_B85BAA1D,Spectrum Credit,https://www.spectrumcredit.co.ke/terms-of-use,dataset/raw/spectrum_credit/terms_of_use.html,Success
+DOC_9DDBC2FE,Moneza,https://britziazan.asia/privacy.html,dataset/raw/moneza/privacy_policy.html,Success
+DOC_67E009D8,Malicash,https://malicash.co.ke/privacy-policy/,dataset/raw/malicash/privacy_policy.html,Success
+DOC_2AAEA1C0,Malicash,https://malicash.co.ke/terms-conditions/,dataset/raw/malicash/terms_and_conditions.html,Success
+DOC_A5256E50,Lockbx,https://lockbx.io/terms-and-conditions.html,dataset/raw/lockbx/terms_and_conditions.html,Success
+DOC_D26D93B8,Lockbx,https://lockbx.io/privacy-policy.html,dataset/raw/lockbx/privacy_policy.html,Success
+DOC_7A992657,Loanplus,https://www.loanplus.co.ke/loan_plus/android_privacy/,dataset/raw/loanplus/privacy_policy.html,Success
+DOC_39D8EB9C,Kikwetu Credit,https://kikwetucredit.co.ke/privacy-policy/,dataset/raw/kikwetu_credit/privacy_policy.html,Success
+DOC_45820A52,Kikwetu Credit,https://kikwetucredit.co.ke/terms-and-conditions/,dataset/raw/kikwetu_credit/terms_and_conditions.html,Success
+DOC_9281EFFF,iPesa,https://ipesa.top/privacy-policy,dataset/raw/ipesa/privacy_policy.html,Success
+DOC_CBDD33E4,Chapeo,https://chapeo.co.ke/privacy/,dataset/raw/chapeo/privacy_policy.html,Success
+DOC_998BEF06,Autocheck,https://www.autochek.africa/ke/privacy-policy,dataset/raw/autocheck/privacy_policy.html,Success
+DOC_E280398C,Meta Loan,https://app-api.metaloan.co.ke/wap/agreement?name=Privacy_Policy&system=keMetaLoan,dataset/raw/meta_loan/privacy_policy.html,Success
+DOC_E58D8CEC,Meta Loan,Google Play Store,dataset/raw/meta_loan/loan_product_information.txt,Success
+DOC_6ED7A578,Tuma Loan,https://futurisltd.com/privacy.html,dataset/raw/tuma_loan/privacy_policy.html,Success
+DOC_D3BEA272,Tuma Loan,Google Play Store,dataset/raw/tuma_loan/loan_product_information.txt,Success
+DOC_44D3B451,ZK Pesa,https://web.zkpesa.com/privacy/,dataset/raw/zk_pesa/privacy_policy.html,Success
+DOC_8F5329E5,ZK Pesa,Google Play Store,dataset/raw/zk_pesa/loan_product_information.txt,Success
+DOC_D8455828,Kashbean,https://app-api.kashbean.co.ke/wap/agreement?name=Privacy_Policy&system=Kashbean,dataset/raw/kashbean/privacy_policy.html,Success
+DOC_2A85E54D,Kashbean,Google Play Store,dataset/raw/kashbean/loan_product_information.txt,Success
+DOC_5C7939C7,Zash Loan,https://app-api.zashloan.com/wap/agreement?name=Privacy_Policy&system=ZashLoan,dataset/raw/zash_loan/privacy_policy.html,Success
+DOC_20E5E340,Zash Loan,Google Play Store,dataset/raw/zash_loan/loan_product_information.txt,Success
+DOC_AE9D3F38,Flashpesa,https://api.flashpesa.africa/privacypolicy.html,dataset/raw/flashpesa/privacy_policy.html,Success
+DOC_3C7B14E6,Flashpesa,Google Play Store,dataset/raw/flashpesa/loan_product_information.txt,Success
+DOC_24AE7D39,Loop,https://loop.co.ke/privacy_policy/,dataset/raw/loop/privacy_policy.html,Success
+DOC_B1F7B957,FairKash+,https://fbiz.fairkplus.cc/privacidad/privacidadProt.html,dataset/raw/fairkash+/privacy_policy.html,Success
+DOC_8A51D3A9,FairKash+,Google Play Store,dataset/raw/fairkash+/loan_product_information.txt,Success
+DOC_955013F1,Koro,https://koro.co.ke/koro-privacy-policy/,dataset/raw/koro/privacy_policy.html,Success
+DOC_ED0BBC3B,Timiza,https://www.absabank.co.ke/data-privacy-statement/,dataset/raw/timiza/privacy_policy.html,Success
+DOC_F37443D9,Letsgo,https://www.letsgo.letshego.com/privacy-policy.html,dataset/raw/letsgo/privacy_policy.html,Success
+DOC_608C9075,Letsgo,Google Play Store,dataset/raw/letsgo/loan_product_information.txt,Success
+DOC_5CA16410,Advancepoa,https://www.advancepoa.com/privacy-policy,dataset/raw/advancepoa/privacy_policy.html,Success
+DOC_BFC549FE,Advancepoa,Google Play Store,dataset/raw/advancepoa/loan_product_information.txt,Success
+DOC_CB8129DC,Pawacash,https://www.pesaloan.com/asset/Pawa_Privacy_20260710.html,dataset/raw/pawacash/privacy_policy.html,Success
+DOC_AA70459D,Pawacash,Google Play Store,dataset/raw/pawacash/loan_product_information.txt,Success
+DOC_FF423323,Choice Sasa,https://sasa.choice-bank.com/privacy-policy,dataset/raw/choice_sasa/privacy_policy.html,Success
+DOC_2E69998D,Tumacash,https://www.gettumax.com/policy.html,dataset/raw/tumacash/privacy_policy.html,Success
+DOC_8A477864,Pesain,https://www.pesain.net/h5/secretPage.html,dataset/raw/pesain/privacy_policy.html,Success
+DOC_78F482F8,Numida,https://ke.numida.com/data-and-privacy-policy,dataset/raw/numida/privacy_policy.html,Success
+DOC_FDCF95E5,Boreleza,https://boreleza.com/privacy-policy,dataset/raw/boreleza/privacy_policy.html,Success
+DOC_280297FC,Boreleza,https://boreleza.com/terms-of-use,dataset/raw/boreleza/terms_of_use.html,Success
+DOC_EDAEF404,Helasasa,https://sites.google.com/view/helasasaprivacy?pli=1&authuser=0,dataset/raw/helasasa/privacy_policy.html,Success
+DOC_F8417EAE,Helasasa,Google Play Store,dataset/raw/helasasa/loan_product_information.txt,Success
+DOC_17589188,Zuri Cash,https://support.zuricash.live/privacy_privacy/,dataset/raw/zuri_cash/privacy_policy.html,Success
+DOC_33F008DB,Ganji Pesa,https://www.ganjipesa.com/privacy.html,dataset/raw/ganji_pesa/privacy_policy.html,Success
+DOC_FC8C6FE0,Ganji Pesa,https://www.ganjipesa.com/service.html,dataset/raw/ganji_pesa/terms_and_conditions.html,Failed
+DOC_67FB13DC,Chapaa Loan,https://sites.google.com/view/chapaa-chapaa,dataset/raw/chapaa_loan/privacy_policy.html,Success
+DOC_D841A57B,Chapaa Loan,Google Play Store,dataset/raw/chapaa_loan/loan_product_information.txt,Success
+DOC_89CEA258,Raha Pesa,https://www.mkulimapay.co.ke/rahapesa-privacy-policy/,dataset/raw/raha_pesa/privacy_policy.html,Success
+DOC_B086EA25,Raha Pesa,Google Play Store,dataset/raw/raha_pesa/loan_product_information.txt,Success
+DOC_813AD776,Bayes,https://www.bayes.co.ke/terms-and-conditions,dataset/raw/bayes/terms_and_conditions.html,Success
+DOC_B2B456EF,Bayes,https://www.bayes.co.ke/privacy-policy,dataset/raw/bayes/privacy_policy.html,Success
+DOC_A89328C6,Asapkash,https://www.asapkash.co.ke/privacyPolicy,dataset/raw/asapkash/privacy_policy.html,Success
+DOC_209F370C,Kechita Capital,https://kechitacapital.co.ke/terms-and-conditions/,dataset/raw/kechita_capital/terms_and_conditions.html,Success
+DOC_E27AC79F,Kechita Capital,https://kechitacapital.co.ke/privacy-policy/,dataset/raw/kechita_capital/privacy_policy.html,Success
+DOC_C291702E,Pato Capital,https://patocapital.com/terms/,dataset/raw/pato_capital/terms_and_conditions.html,Success
+DOC_6A9907A3,Pato Capital,https://patocapital.com/privacy/,dataset/raw/pato_capital/privacy_policy.html,Success
+DOC_4F958DF3,Tick Credit,https://www.tickconsulting.co.ke/terms-and-conditions/index.htm,dataset/raw/tick_credit/terms_and_conditions.html,Success
+DOC_E9E971C1,iLoan,https://iloan.co.ke/terms-and-conditions,dataset/raw/iloan/terms_and_conditions.html,Success
+DOC_0F4045A5,iLoan,https://iloan.co.ke/privacy-policy,dataset/raw/iloan/privacy_policy.html,Success
+DOC_C2A0CB8C,Asapcredit,https://asapcredit.africa/terms-and-conditions,dataset/raw/asapcredit/terms_and_conditions.html,Success
+DOC_A00DFE33,Asapcredit,https://asapcredit.africa/privacy-policy,dataset/raw/asapcredit/privacy_policy.html,Success
+DOC_141E2B8A,Kopokopo,https://app.kopokopo.com/privacy,dataset/raw/kopokopo/privacy_policy.html,Success
+DOC_49FC64F6,Kopokopo,https://kopokopo.co.ke/terms-conditions/,dataset/raw/kopokopo/terms_and_conditions.html,Success
+DOC_011F6783,Coop Bank,https://www.co-opbank.co.ke/all_terms_conditions/digital-lending-terms-conditions/,dataset/raw/coop_bank/terms_and_conditions.html,Success
+DOC_B8A06EBC,Tazu Credit,https://tazugroup.com/legal/terms,dataset/raw/tazu_credit/terms_and_conditions.html,Success
+DOC_99BA32D8,Tazu Credit,https://tazugroup.com/legal/privacy,dataset/raw/tazu_credit/privacy_policy.html,Success
+DOC_090D098A,Tanir Credit,https://tanirltd.co.ke/loan-agreement-terms,dataset/raw/tanir_credit/loan_agreement.html,Success
+DOC_4559C827,Tanir Credit,https://tanirltd.co.ke/privacy,dataset/raw/tanir_credit/privacy_policy.html,Success
+DOC_6F266B36,Tanir Credit,https://tanirltd.co.ke/terms-use,dataset/raw/tanir_credit/terms_of_use.html,Success
+DOC_1A3DAD10,Premier Credit,https://www.premierkenya.co.ke/quick-links/terms-and-conditions/,dataset/raw/premier_credit/terms_and_conditions.html,Success
+DOC_CA24379B,Premier Credit,https://www.premierkenya.co.ke/quick-links/privacy-policy/,dataset/raw/premier_credit/privacy_policy.html,Success

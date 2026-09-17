@@ -1,0 +1,22 @@
+# UI & Frontend
+streamlit==1.40.1
+
+# Natural Language Processing & Deep Learning
+torch==2.5.1
+transformers==4.46.3
+spacy==3.8.2
+
+# Database & Concurrency
+pymongo==4.10.1
+pydantic==2.10.3
+python-dotenv==1.0.1
+
+# Data Ingestion & Scraping
+playwright==1.49.0
+beautifulsoup4==4.12.3
+pandas==2.2.3
+pdfplumber==0.11.4
+
+# Quality Assurance & Testing
+pytest==8.3.4
+flake8==7.1.1
