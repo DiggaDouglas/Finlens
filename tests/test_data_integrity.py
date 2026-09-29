@@ -25,6 +25,7 @@ def test_clause_dataset_structure():
     assert len(df) == 9467, f"Expected exactly 9467 clauses, found {len(df)}"
 
 def test_no_missing_values():
-    df = pd.read_csv("data/processed/Finlens_dataset.csv")
+    # keep_default_na=False stops pandas from turning the literal string "N/A" back into a missing value
+    df = pd.read_csv("data/processed/Finlens_dataset.csv", keep_default_na=False)
     total_missing = df.isnull().sum().sum()
     assert total_missing == 0, f"Expected 0 missing values, found {total_missing}. Check 'violating_span' and 'annotator_notes'."
