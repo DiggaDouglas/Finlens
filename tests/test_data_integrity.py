@@ -5,11 +5,26 @@ import pytest
 def test_raw_dataset_exists():
     assert os.path.exists("data/interim/documents.csv"), "documents.csv missing from data/interim/"
 
-def test_processed_clauses_exist():
-    assert os.path.exists("data/processed/annotation_dataset.csv"), "annotation_dataset.csv missing from data/processed/"
+def test_processed_dataset_exists():
+    assert os.path.exists("data/processed/Finlens_dataset.csv"), "Finlens_dataset.csv missing from data/processed/"
 
 def test_clause_dataset_structure():
-    df = pd.read_csv("data/processed/annotation_dataset.csv")
-    required_cols = {"clause_id", "document_id", "clause_text", "violation_category", "risk_level"}
-    assert required_cols.issubset(set(df.columns)), f"Missing required columns: {required_cols - set(df.columns)}"
-    assert len(df) > 5000, f"Expected >5000 clauses, found {len(df)}"
+    df = pd.read_csv("data/processed/Finlens_dataset.csv")
+    
+    # Updated to match the new 12-column industry-standard schema
+    required_cols = {
+        "clause_id", "document_id", "provider_name", "document_type", 
+        "source_type", "raw_text", "cleaned_clause_text", "violation_category", 
+        "risk_level", "violating_span", "primary_law_reference", "annotator_notes"
+    }
+    
+    missing_cols = required_cols - set(df.columns)
+    assert not missing_cols, f"Missing required columns: {missing_cols}"
+    
+    # Asserting the exact finalized row count
+    assert len(df) == 9467, f"Expected exactly 9467 clauses, found {len(df)}"
+
+def test_no_missing_values():
+    df = pd.read_csv("data/processed/Finlens_dataset.csv")
+    total_missing = df.isnull().sum().sum()
+    assert total_missing == 0, f"Expected 0 missing values, found {total_missing}. Check 'violating_span' and 'annotator_notes'."
