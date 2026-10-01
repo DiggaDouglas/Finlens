@@ -1,5 +1,9 @@
 import streamlit as st
-from app.views.auth_view import render_login_view
+from app.views.auth.login_view import render_login_view
+from app.views.auth.reset_password_view import render_reset_password_view
+from app.views.superadmin.user_management_view import render_admin_dashboard
+from app.views.regulator.dashboard_view import render_regulator_dashboard
+from src.database.auth import validate_active_session, terminate_session
 
 st.set_page_config(
     page_title="FinLens | RegTech Intelligence",
@@ -7,27 +11,48 @@ st.set_page_config(
     layout="wide"
 )
 
-# 1. Initialize Authentication Session State
+# 1. State Initialization
 if "authenticated" not in st.session_state:
     st.session_state["authenticated"] = False
 if "user" not in st.session_state:
     st.session_state["user"] = None
 
-# 2. Gatekeeper: If not logged in, enforce login view
+# 2. Unauthenticated Gatekeeper
 if not st.session_state["authenticated"]:
     render_login_view()
     st.stop()
 
-# 3. Authenticated View: Regulator Workspace
+# 3. Session Security Check (Timeout & Active Token Verification)
+user_data = st.session_state["user"]
+if not validate_active_session(user_data["email"], user_data["token"]):
+    st.session_state["authenticated"] = False
+    st.session_state["user"] = None
+    st.warning("Your session has expired. Please sign in again.")
+    st.stop()
+
+# 4. Mandatory Password Reset Enforcement
+if user_data.get("must_change_password", False):
+    render_reset_password_view()
+    st.stop()
+
+# 5. Global Sidebar & Server-Side Termination
 with st.sidebar:
-    st.markdown("### FinLens Auditor")
-    st.write(f"Logged in as: **{st.session_state['user']['email']}**")
-    st.caption(f"Role: {st.session_state['user']['role']}")
+    st.markdown("### FinLens Portal")
+    st.write(f"Logged in as: **{user_data['email']}**")
+    st.caption(f"Role: {user_data['role']}")
     
     if st.button("Logout", use_container_width=True):
+        terminate_session(user_data["email"], user_data["token"])
         st.session_state["authenticated"] = False
         st.session_state["user"] = None
+        if "api_key" in st.session_state:
+            del st.session_state["api_key"]
         st.rerun()
 
-st.title("Digital Lending Compliance Dashboard")
-st.success("Regulator session active. Document upload and risk audit views are accessible.")
+# 6. Role-Based Routing
+if user_data["role"] == "SuperAdmin":
+    render_admin_dashboard()
+elif user_data["role"] == "Regulator":
+    render_regulator_dashboard()
+else:
+    st.error("Unauthorized access tier.")

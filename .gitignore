@@ -1,22 +1,45 @@
-# Virtual Environment
+# Local secrets and configuration
+.env*
+seed_db.py
+*.pem
+*.key
+secrets/
+
+# Python environments and generated files
 venv/
+.venv/
 env/
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
 
-# Local Config
-.env
+# Local databases and logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# IDE and operating system files
 .DS_Store
+Thumbs.db
 .idea/
 .vscode/
 
-# Build & Model Artifacts
+# Build & model artifacts
 *.h5
 *.pt
 *.bin
 models/
 checkpoint-*/
 
-# Large Raw Dumps (Version processed CSVs or use DVC)
+# Large raw dumps (version processed CSVs or use DVC)
 data/raw/*
 !data/raw/.gitkeep

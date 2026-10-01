@@ -1,10 +1,19 @@
 # UI & Frontend
 streamlit==1.40.1
 
+ # Data analysis & visualization
+numpy
+matplotlib
+seaborn
+scikit-learn
+
+# Authentication
+bcrypt
+
 # Natural Language Processing & Deep Learning
-torch==2.5.1
-transformers==4.46.3
-spacy==3.8.2
+torch>=2.6.0  # Or just 'torch' to let pip find the compatible version
+transformers>=4.46.3
+spacy>=3.8.2
 
 # Database & Concurrency
 pymongo==4.10.1
