@@ -36,9 +36,27 @@ if user_data.get("must_change_password", False):
     st.stop()
 
 # 5. Global Sidebar & Server-Side Termination
+# Replace the existing sidebar block in app/main.py with this:
 with st.sidebar:
-    st.markdown("### FinLens Portal")
-    st.write(f"Logged in as: **{user_data['email']}**")
+    st.markdown("## 🛡️ FinLens\nRegTech Intelligence")
+    st.divider()
+    
+    # Mock navigation links for UI fidelity
+    st.markdown(" **Dashboard**")
+    st.markdown(" Lenders")
+    st.markdown(" Documents")
+    st.markdown(" Risk Analysis")
+    st.markdown(" Reports")
+    st.markdown(" Alerts")
+    
+    st.write("")
+    st.write("")
+    st.markdown("⚙️ Settings")
+    st.markdown("👥 Users")
+    
+    st.divider()
+    
+    st.write(f"👤 **{user_data['email']}**")
     st.caption(f"Role: {user_data['role']}")
     
     if st.button("Logout", use_container_width=True):

@@ -62,20 +62,33 @@ def verify_credentials(email: str, password: str) -> dict | None:
     return None
 
 def validate_active_session(email: str, token: str) -> bool:
+    """Validates token presence, single-session integrity, and timeout limits."""
     try:
         db = DatabaseClient.get_database()
         user = db.Users.find_one({"email": email.strip().lower(), "session_token": token})
+        
         if not user:
             return False
             
         last_activity = user.get("last_activity", user.get("last_login"))
-        if not last_activity or datetime.now(timezone.utc) - last_activity > timedelta(minutes=SESSION_TIMEOUT_MINUTES):
+        if not last_activity:
+            return False
+
+        # Ensure last_activity is timezone-aware (MongoDB returns naive UTC by default)
+        if last_activity.tzinfo is None:
+            last_activity = last_activity.replace(tzinfo=timezone.utc)
+            
+        now = datetime.now(timezone.utc)
+        
+        if now - last_activity > timedelta(minutes=SESSION_TIMEOUT_MINUTES):
             terminate_session(email, token, reason="TIMEOUT")
             return False
             
-        db.Users.update_one({"_id": user["_id"]}, {"$set": {"last_activity": datetime.now(timezone.utc)}})
+        # Refresh last activity timestamp
+        db.Users.update_one({"_id": user["_id"]}, {"$set": {"last_activity": now}})
         return True
-    except Exception:
+    except Exception as e:
+        print(f"Session validation error: {e}")
         return False
 
 def terminate_session(email: str, token: str, reason: str = "LOGOUT"):
